@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class TitleController : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public GameObject Start_btn;
+    public GameObject Manual_btn;
+    public GameObject Appreciate_btn;
     void Start()
     {
         
@@ -18,5 +22,20 @@ public class TitleController : MonoBehaviour
         {
             SceneManager.LoadScene("GameScene");
         }
+    }
+
+    public void OnStart()
+    {
+         SceneManager.LoadScene("GameScene");
+    }
+
+    public void OnManual()
+    {
+
+    }
+
+    public void OnAppreciate()
+    {
+        
     }
 }
